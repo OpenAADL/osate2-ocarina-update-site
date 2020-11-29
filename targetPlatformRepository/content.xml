@@ -1033,136 +1033,38 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.osate.ocarina' version='0.0.1.v20201129-0249' generation='2'>
-      <update id='org.osate.ocarina' range='[0.0.0,0.0.1.v20201129-0249)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Ocarina plug-in for OSATEv2'/>
-        <property name='org.eclipse.equinox.p2.provider' value='ISAE'/>
+    <unit id='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0335' generation='2'>
+      <update id='org.osate.ocarina.aadlcontribution' range='[0.0.0,0.0.1.v20201129-0335)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Aadlcontribution'/>
         <property name='maven-groupId' value='org.osate'/>
-        <property name='maven-artifactId' value='org.osate.ocarina'/>
+        <property name='maven-artifactId' value='org.osate.ocarina.aadlcontribution'/>
         <property name='maven-version' value='0.0.1-SNAPSHOT'/>
       </properties>
       <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina' version='0.0.1.v20201129-0249'/>
-        <provided namespace='osgi.bundle' name='org.osate.ocarina' version='0.0.1.v20201129-0249'/>
-        <provided namespace='osgi.identity' name='org.osate.ocarina' version='0.0.1.v20201129-0249'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0335'/>
+        <provided namespace='osgi.bundle' name='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0335'/>
+        <provided namespace='osgi.identity' name='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0335'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
         </provided>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
-      <requires size='17'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.edit' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.osate.aadl2' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.osate.aadl2.modelsupport' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.osate.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.osate.pluginsupport' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.osate.workspace' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.osate.xtext.aadl2.properties' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='org.osate.xtext.aadl2.ui' range='1.0.0'/>
-        <required namespace='osgi.bundle' name='org.apache.commons.lang' range='2.4.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.apache.commons.io' range='2.2.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      <requires size='1'>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.osate.ocarina' version='0.0.1.v20201129-0249'/>
+        <artifact classifier='osgi.bundle' id='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0335'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: org.osate.ocarina;singleton:=true&#xA;Bundle-Version: 0.0.1.v20201129-0249
+            Bundle-SymbolicName: org.osate.ocarina.aadlcontribution;singleton:=true&#xA;Bundle-Version: 0.0.1.v20201129-0335
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0249' singleton='false'>
-      <update id='org.osate.ocarina.aadlcontribution.source' range='[0.0.0,0.0.1.v20201129-0249)' severity='0'/>
-      <properties size='9'>
-        <property name='df_LT.bundleVendor' value='unknown'/>
-        <property name='df_LT.bundleName' value='Aadlcontribution Source'/>
-        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
-        <property name='maven-groupId' value='org.osate'/>
-        <property name='maven-artifactId' value='org.osate.ocarina.aadlcontribution'/>
-        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
-        <property name='maven-classifier' value='sources'/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0249'/>
-        <provided namespace='osgi.bundle' name='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0249'/>
-        <provided namespace='osgi.identity' name='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0249'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0249'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.osate.ocarina.aadlcontribution.source&#xA;Bundle-Version: 0.0.1.v20201129-0249
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.osate.ocarina.feature.feature.group' version='0.0.1.v20201129-0249' singleton='false'>
-      <update id='org.osate.ocarina.feature.feature.group' range='[0.0.0,0.0.1.v20201129-0249)' severity='0'/>
-      <properties size='7'>
-        <property name='org.eclipse.equinox.p2.name' value='OSATE2-Ocarina'/>
-        <property name='org.eclipse.equinox.p2.description' value='OSATE 2 plug-in that provides integration with Ocarina.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/yoogx/osate2-ocarina'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-        <property name='maven-groupId' value='org.osate'/>
-        <property name='maven-artifactId' value='org.osate.ocarina.feature'/>
-        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.feature.group' version='0.0.1.v20201129-0249'/>
-      </provides>
-      <requires size='18'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.aadl2' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.aadl2.modelsupport' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ui' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.pluginsupport' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.workspace' range='0.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.xtext.aadl2.properties' range='1.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.xtext.aadl2.ui' range='1.0.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.console' range='3.5.100'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.lang' range='2.4.0'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina' range='[0.0.1.v20201129-0249,0.0.1.v20201129-0249]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.aadlcontribution' range='[0.0.1.v20201129-0249,0.0.1.v20201129-0249]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.help' range='[0.1.1.v20201129-0249,0.1.1.v20201129-0249]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.feature.jar' range='[0.0.1.v20201129-0249,0.0.1.v20201129-0249]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='http://www.eclipse.org/legal/cpl-v10.html' url='http://www.eclipse.org/legal/cpl-v10.html'>
-          Common Public License - v 1.0&#xA;Updated 16 Apr 2009&#xA;As of 25 Feb 2009, IBM has assigned the Agreement Steward role for the CPL to the Eclipse Foundation. Eclipse has designated the Eclipse Public License (EPL) as the follow-on version of the CPL.&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (&quot;AGREEMENT&quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT&apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&quot;Contribution&quot; means:&#xA; • a) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and&#xA; • b) in the case of each subsequent Contributor:&#xA; • i) changes to the Program, and&#xA; • ii) additions to the Program;&#xA; • where such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution &apos;originates&apos; from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor&apos;s behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program.&#xA;&#xA;&quot;Contributor&quot; means any person or entity that distributes the Program.&#xA;&#xA;&quot;Licensed Patents &quot; mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.&#xA;&#xA;&quot;Program&quot; means the Contributions distributed in accordance with this Agreement.&#xA;&#xA;&quot;Recipient&quot; means anyone who receives the Program under this Agreement, including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA; • a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.&#xA; • &#xA; • b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.&#xA; • &#xA; • c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient&apos;s responsibility to acquire that license before distributing the Program.&#xA; • &#xA; • d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.&#xA; • &#xA;3. REQUIREMENTS&#xA;A Contributor may choose to distribute the Program in object code form under its own license agreement, provided that:&#xA; • a) it complies with the terms and conditions of this Agreement; and&#xA; • b) its license agreement:&#xA; • i) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;&#xA; • ii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;&#xA; • iii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and&#xA; • iv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange.&#xA; • &#xA;When the Program is made available in source code form:&#xA; • a) it must be made available under this Agreement; and&#xA; • b) a copy of this Agreement must be included with each copy of the Program.&#xA;&#xA;Contributors may not remove or alter any copyright notices contained within the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (&quot;Commercial Contributor&quot;) hereby agrees to defend and indemnify every other Contributor (&quot;Indemnified Contributor&quot;) against any losses, damages and costs (collectively &quot;Losses&quot;) arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor&apos;s responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. &#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient&apos;s patent(s), then such Recipient&apos;s rights granted under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&apos;s rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient&apos;s rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient&apos;s obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. &#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version.Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
-        </license>
-      </licenses>
     </unit>
     <unit id='org.eclipse.graphiti' version='0.17.0.202005151449' generation='2'>
       <update id='org.eclipse.graphiti' range='[0.0.0,0.17.0.202005151449)' severity='0'/>
@@ -1522,6 +1424,41 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.ltk.core.refactoring; singleton:=true&#xA;Bundle-Version: 3.11.0.v20200515-0330
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.osate.ocarina.help' version='0.1.1.v20201129-0335'>
+      <update id='org.osate.ocarina.help' range='[0.0.0,0.1.1.v20201129-0335)' severity='0'/>
+      <properties size='8'>
+        <property name='df_LT.pluginName' value='OSATE2-Ocarina Help Plugin'/>
+        <property name='df_LT.providerName' value='OSATE2-Ocarina Plugin Provider'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='maven-groupId' value='org.osate'/>
+        <property name='maven-artifactId' value='org.osate.ocarina.help'/>
+        <property name='maven-version' value='0.1.1-SNAPSHOT'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.help' version='0.1.1.v20201129-0335'/>
+        <provided namespace='osgi.bundle' name='org.osate.ocarina.help' version='0.1.1.v20201129-0335'/>
+        <provided namespace='osgi.identity' name='org.osate.ocarina.help' version='0.1.1.v20201129-0335'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.osate.ocarina.help' version='0.1.1.v20201129-0335'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.osate.ocarina.help;singleton:=true&#xA;Bundle-Version: 0.1.1.v20201129-0335
           </instruction>
         </instructions>
       </touchpointData>
@@ -2856,37 +2793,36 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.osate.ocarina.feature.feature.jar' version='0.0.1.v20201129-0249'>
-      <properties size='6'>
-        <property name='org.eclipse.equinox.p2.name' value='OSATE2-Ocarina'/>
+    <unit id='org.osate.ocarina.feature.source.feature.group' version='0.0.1.v20201129-0335' singleton='false'>
+      <update id='org.osate.ocarina.feature.source.feature.group' range='[0.0.0,0.0.1.v20201129-0335)' severity='0'/>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='OSATE2-Ocarina Developer Resources'/>
         <property name='org.eclipse.equinox.p2.description' value='OSATE 2 plug-in that provides integration with Ocarina.'/>
         <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/yoogx/osate2-ocarina'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
         <property name='maven-groupId' value='org.osate'/>
         <property name='maven-artifactId' value='org.osate.ocarina.feature'/>
         <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+        <property name='maven-classifier' value='sources-feature'/>
       </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.feature.jar' version='0.0.1.v20201129-0249'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='org.osate.ocarina.feature' version='0.0.1.v20201129-0249'/>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.source.feature.group' version='0.0.1.v20201129-0335'/>
       </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='org.osate.ocarina.feature' version='0.0.1.v20201129-0249'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.feature.group' range='[0.0.1.v20201129-0335,0.0.1.v20201129-0335]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.source' range='[0.0.1.v20201129-0335,0.0.1.v20201129-0335]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.aadlcontribution.source' range='[0.0.1.v20201129-0335,0.0.1.v20201129-0335]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.help.source' range='[0.1.1.v20201129-0335,0.1.1.v20201129-0335]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.source.feature.jar' range='[0.0.1.v20201129-0335,0.0.1.v20201129-0335]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
       <licenses size='1'>
         <license uri='http://www.eclipse.org/legal/cpl-v10.html' url='http://www.eclipse.org/legal/cpl-v10.html'>
-          Common Public License - v 1.0&#xA;Updated 16 Apr 2009&#xA;As of 25 Feb 2009, IBM has assigned the Agreement Steward role for the CPL to the Eclipse Foundation. Eclipse has designated the Eclipse Public License (EPL) as the follow-on version of the CPL.&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (&quot;AGREEMENT&quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT&apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&quot;Contribution&quot; means:&#xA; • a) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and&#xA; • b) in the case of each subsequent Contributor:&#xA; • i) changes to the Program, and&#xA; • ii) additions to the Program;&#xA; • where such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution &apos;originates&apos; from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor&apos;s behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program.&#xA;&#xA;&quot;Contributor&quot; means any person or entity that distributes the Program.&#xA;&#xA;&quot;Licensed Patents &quot; mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.&#xA;&#xA;&quot;Program&quot; means the Contributions distributed in accordance with this Agreement.&#xA;&#xA;&quot;Recipient&quot; means anyone who receives the Program under this Agreement, including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA; • a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.&#xA; • &#xA; • b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.&#xA; • &#xA; • c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient&apos;s responsibility to acquire that license before distributing the Program.&#xA; • &#xA; • d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.&#xA; • &#xA;3. REQUIREMENTS&#xA;A Contributor may choose to distribute the Program in object code form under its own license agreement, provided that:&#xA; • a) it complies with the terms and conditions of this Agreement; and&#xA; • b) its license agreement:&#xA; • i) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;&#xA; • ii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;&#xA; • iii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and&#xA; • iv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange.&#xA; • &#xA;When the Program is made available in source code form:&#xA; • a) it must be made available under this Agreement; and&#xA; • b) a copy of this Agreement must be included with each copy of the Program.&#xA;&#xA;Contributors may not remove or alter any copyright notices contained within the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (&quot;Commercial Contributor&quot;) hereby agrees to defend and indemnify every other Contributor (&quot;Indemnified Contributor&quot;) against any losses, damages and costs (collectively &quot;Losses&quot;) arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor&apos;s responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. &#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient&apos;s patent(s), then such Recipient&apos;s rights granted under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&apos;s rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient&apos;s rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient&apos;s obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. &#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version.Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
+          Common Public License - v 1.0&#xA;Updated 16 Apr 2009&#xA;As of 25 Feb 2009, IBM has assigned the Agreement Steward role for the CPL to the Eclipse Foundation. Eclipse has designated the Eclipse Public License (EPL) as the follow-on version of the CPL.&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (&amp;quot;AGREEMENT&amp;quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT&amp;apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&amp;quot;Contribution&amp;quot; means:&#xA; • a) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and&#xA; • b) in the case of each subsequent Contributor:&#xA; • i) changes to the Program, and&#xA; • ii) additions to the Program;&#xA; • where such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution &amp;apos;originates&amp;apos; from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor&amp;apos;s behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program.&#xA;&#xA;&amp;quot;Contributor&amp;quot; means any person or entity that distributes the Program.&#xA;&#xA;&amp;quot;Licensed Patents &amp;quot; mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.&#xA;&#xA;&amp;quot;Program&amp;quot; means the Contributions distributed in accordance with this Agreement.&#xA;&#xA;&amp;quot;Recipient&amp;quot; means anyone who receives the Program under this Agreement, including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA; • a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.&#xA; • &#xA; • b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.&#xA; • &#xA; • c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient&amp;apos;s responsibility to acquire that license before distributing the Program.&#xA; • &#xA; • d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.&#xA; • &#xA;3. REQUIREMENTS&#xA;A Contributor may choose to distribute the Program in object code form under its own license agreement, provided that:&#xA; • a) it complies with the terms and conditions of this Agreement; and&#xA; • b) its license agreement:&#xA; • i) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;&#xA; • ii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;&#xA; • iii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and&#xA; • iv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange.&#xA; • &#xA;When the Program is made available in source code form:&#xA; • a) it must be made available under this Agreement; and&#xA; • b) a copy of this Agreement must be included with each copy of the Program.&#xA;&#xA;Contributors may not remove or alter any copyright notices contained within the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (&amp;quot;Commercial Contributor&amp;quot;) hereby agrees to defend and indemnify every other Contributor (&amp;quot;Indemnified Contributor&amp;quot;) against any losses, damages and costs (collectively &amp;quot;Losses&amp;quot;) arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor&amp;apos;s responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. &#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient&amp;apos;s patent(s), then such Recipient&amp;apos;s rights granted under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&amp;apos;s rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient&amp;apos;s rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient&amp;apos;s obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. &#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version.Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
         </license>
       </licenses>
     </unit>
@@ -4363,6 +4299,42 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='org.osate.ocarina.source' version='0.0.1.v20201129-0335' singleton='false'>
+      <update id='org.osate.ocarina.source' range='[0.0.0,0.0.1.v20201129-0335)' severity='0'/>
+      <properties size='9'>
+        <property name='df_LT.bundleVendor' value='ISAE'/>
+        <property name='df_LT.bundleName' value='Ocarina plug-in for OSATEv2 Source'/>
+        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
+        <property name='maven-groupId' value='org.osate'/>
+        <property name='maven-artifactId' value='org.osate.ocarina'/>
+        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+        <property name='maven-classifier' value='sources'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.source' version='0.0.1.v20201129-0335'/>
+        <provided namespace='osgi.bundle' name='org.osate.ocarina.source' version='0.0.1.v20201129-0335'/>
+        <provided namespace='osgi.identity' name='org.osate.ocarina.source' version='0.0.1.v20201129-0335'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.osate.ocarina.source' version='0.0.1.v20201129-0335'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.osate.ocarina.source&#xA;Bundle-Version: 0.0.1.v20201129-0335
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.e4.core.di.extensions.supplier' version='0.15.600.v20200311-0642' singleton='false' generation='2'>
       <update id='org.eclipse.e4.core.di.extensions.supplier' range='[0.0.0,0.15.600.v20200311-0642)' severity='0'/>
       <properties size='7'>
@@ -4577,42 +4549,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.osate.ocarina.help.source' version='0.1.1.v20201129-0249' singleton='false'>
-      <update id='org.osate.ocarina.help.source' range='[0.0.0,0.1.1.v20201129-0249)' severity='0'/>
-      <properties size='9'>
-        <property name='df_LT.bundleVendor' value='OSATE2-Ocarina Plugin Provider'/>
-        <property name='df_LT.bundleName' value='OSATE2-Ocarina Help Plugin Source'/>
-        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
-        <property name='maven-groupId' value='org.osate'/>
-        <property name='maven-artifactId' value='org.osate.ocarina.help'/>
-        <property name='maven-version' value='0.1.1-SNAPSHOT'/>
-        <property name='maven-classifier' value='sources'/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.help.source' version='0.1.1.v20201129-0249'/>
-        <provided namespace='osgi.bundle' name='org.osate.ocarina.help.source' version='0.1.1.v20201129-0249'/>
-        <provided namespace='osgi.identity' name='org.osate.ocarina.help.source' version='0.1.1.v20201129-0249'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.osate.ocarina.help.source' version='0.1.1.v20201129-0249'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.osate.ocarina.help.source&#xA;Bundle-Version: 0.1.1.v20201129-0249
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.draw2d' version='3.10.100.201606061308' singleton='false'>
       <update id='org.eclipse.draw2d' range='[0.0.0,3.10.100.201606061308)' severity='0'/>
       <properties size='8'>
@@ -4689,6 +4625,56 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.uml2.uml.edit; singleton:=true&#xA;Bundle-Version: 5.5.0.v20200302-1312
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.osate.ocarina' version='0.0.1.v20201129-0335' generation='2'>
+      <update id='org.osate.ocarina' range='[0.0.0,0.0.1.v20201129-0335)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Ocarina plug-in for OSATEv2'/>
+        <property name='org.eclipse.equinox.p2.provider' value='ISAE'/>
+        <property name='maven-groupId' value='org.osate'/>
+        <property name='maven-artifactId' value='org.osate.ocarina'/>
+        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina' version='0.0.1.v20201129-0335'/>
+        <provided namespace='osgi.bundle' name='org.osate.ocarina' version='0.0.1.v20201129-0335'/>
+        <provided namespace='osgi.identity' name='org.osate.ocarina' version='0.0.1.v20201129-0335'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='17'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.osate.aadl2' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.osate.aadl2.modelsupport' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.osate.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.osate.pluginsupport' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.osate.workspace' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.osate.xtext.aadl2.properties' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='org.osate.xtext.aadl2.ui' range='1.0.0'/>
+        <required namespace='osgi.bundle' name='org.apache.commons.lang' range='2.4.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.apache.commons.io' range='2.2.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.osate.ocarina' version='0.0.1.v20201129-0335'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.osate.ocarina;singleton:=true&#xA;Bundle-Version: 0.0.1.v20201129-0335
           </instruction>
         </instructions>
       </touchpointData>
@@ -5246,41 +5232,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.osate.ocarina.help' version='0.1.1.v20201129-0249'>
-      <update id='org.osate.ocarina.help' range='[0.0.0,0.1.1.v20201129-0249)' severity='0'/>
-      <properties size='8'>
-        <property name='df_LT.pluginName' value='OSATE2-Ocarina Help Plugin'/>
-        <property name='df_LT.providerName' value='OSATE2-Ocarina Plugin Provider'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
-        <property name='maven-groupId' value='org.osate'/>
-        <property name='maven-artifactId' value='org.osate.ocarina.help'/>
-        <property name='maven-version' value='0.1.1-SNAPSHOT'/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.help' version='0.1.1.v20201129-0249'/>
-        <provided namespace='osgi.bundle' name='org.osate.ocarina.help' version='0.1.1.v20201129-0249'/>
-        <provided namespace='osgi.identity' name='org.osate.ocarina.help' version='0.1.1.v20201129-0249'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.osate.ocarina.help' version='0.1.1.v20201129-0249'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.osate.ocarina.help;singleton:=true&#xA;Bundle-Version: 0.1.1.v20201129-0249
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.e4.ui.workbench3' version='0.15.400.v20191216-0805' generation='2'>
       <update id='org.eclipse.e4.ui.workbench3' range='[0.0.0,0.15.400.v20191216-0805)' severity='0'/>
       <properties size='8'>
@@ -5376,6 +5327,42 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.debug.core; singleton:=true&#xA;Bundle-Version: 3.15.100.v20200514-0816
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.osate.ocarina.help.source' version='0.1.1.v20201129-0335' singleton='false'>
+      <update id='org.osate.ocarina.help.source' range='[0.0.0,0.1.1.v20201129-0335)' severity='0'/>
+      <properties size='9'>
+        <property name='df_LT.bundleVendor' value='OSATE2-Ocarina Plugin Provider'/>
+        <property name='df_LT.bundleName' value='OSATE2-Ocarina Help Plugin Source'/>
+        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
+        <property name='maven-groupId' value='org.osate'/>
+        <property name='maven-artifactId' value='org.osate.ocarina.help'/>
+        <property name='maven-version' value='0.1.1-SNAPSHOT'/>
+        <property name='maven-classifier' value='sources'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.help.source' version='0.1.1.v20201129-0335'/>
+        <provided namespace='osgi.bundle' name='org.osate.ocarina.help.source' version='0.1.1.v20201129-0335'/>
+        <provided namespace='osgi.identity' name='org.osate.ocarina.help.source' version='0.1.1.v20201129-0335'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.osate.ocarina.help.source' version='0.1.1.v20201129-0335'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.osate.ocarina.help.source&#xA;Bundle-Version: 0.1.1.v20201129-0335
           </instruction>
         </instructions>
       </touchpointData>
@@ -7465,6 +7452,41 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='org.osate.ocarina.feature.source.feature.jar' version='0.0.1.v20201129-0335'>
+      <properties size='7'>
+        <property name='org.eclipse.equinox.p2.name' value='OSATE2-Ocarina Developer Resources'/>
+        <property name='org.eclipse.equinox.p2.description' value='OSATE 2 plug-in that provides integration with Ocarina.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/yoogx/osate2-ocarina'/>
+        <property name='maven-groupId' value='org.osate'/>
+        <property name='maven-artifactId' value='org.osate.ocarina.feature'/>
+        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+        <property name='maven-classifier' value='sources-feature'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.source.feature.jar' version='0.0.1.v20201129-0335'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.osate.ocarina.feature.source' version='0.0.1.v20201129-0335'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.osate.ocarina.feature.source' version='0.0.1.v20201129-0335'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/cpl-v10.html' url='http://www.eclipse.org/legal/cpl-v10.html'>
+          Common Public License - v 1.0&#xA;Updated 16 Apr 2009&#xA;As of 25 Feb 2009, IBM has assigned the Agreement Steward role for the CPL to the Eclipse Foundation. Eclipse has designated the Eclipse Public License (EPL) as the follow-on version of the CPL.&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (&amp;quot;AGREEMENT&amp;quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT&amp;apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&amp;quot;Contribution&amp;quot; means:&#xA; • a) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and&#xA; • b) in the case of each subsequent Contributor:&#xA; • i) changes to the Program, and&#xA; • ii) additions to the Program;&#xA; • where such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution &amp;apos;originates&amp;apos; from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor&amp;apos;s behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program.&#xA;&#xA;&amp;quot;Contributor&amp;quot; means any person or entity that distributes the Program.&#xA;&#xA;&amp;quot;Licensed Patents &amp;quot; mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.&#xA;&#xA;&amp;quot;Program&amp;quot; means the Contributions distributed in accordance with this Agreement.&#xA;&#xA;&amp;quot;Recipient&amp;quot; means anyone who receives the Program under this Agreement, including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA; • a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.&#xA; • &#xA; • b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.&#xA; • &#xA; • c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient&amp;apos;s responsibility to acquire that license before distributing the Program.&#xA; • &#xA; • d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.&#xA; • &#xA;3. REQUIREMENTS&#xA;A Contributor may choose to distribute the Program in object code form under its own license agreement, provided that:&#xA; • a) it complies with the terms and conditions of this Agreement; and&#xA; • b) its license agreement:&#xA; • i) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;&#xA; • ii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;&#xA; • iii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and&#xA; • iv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange.&#xA; • &#xA;When the Program is made available in source code form:&#xA; • a) it must be made available under this Agreement; and&#xA; • b) a copy of this Agreement must be included with each copy of the Program.&#xA;&#xA;Contributors may not remove or alter any copyright notices contained within the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (&amp;quot;Commercial Contributor&amp;quot;) hereby agrees to defend and indemnify every other Contributor (&amp;quot;Indemnified Contributor&amp;quot;) against any losses, damages and costs (collectively &amp;quot;Losses&amp;quot;) arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor&amp;apos;s responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. &#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient&amp;apos;s patent(s), then such Recipient&amp;apos;s rights granted under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&amp;apos;s rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient&amp;apos;s rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient&amp;apos;s obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. &#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version.Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
+        </license>
+      </licenses>
+    </unit>
     <unit id='org.eclipse.core.expressions' version='3.6.800.v20200319-0911' generation='2'>
       <update id='org.eclipse.core.expressions' range='[0.0.0,3.6.800.v20200319-0911)' severity='0'/>
       <properties size='8'>
@@ -7505,39 +7527,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.core.expressions; singleton:=true&#xA;Bundle-Version: 3.6.800.v20200319-0911
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0249' generation='2'>
-      <update id='org.osate.ocarina.aadlcontribution' range='[0.0.0,0.0.1.v20201129-0249)' severity='0'/>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='Aadlcontribution'/>
-        <property name='maven-groupId' value='org.osate'/>
-        <property name='maven-artifactId' value='org.osate.ocarina.aadlcontribution'/>
-        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
-      </properties>
-      <provides size='4'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0249'/>
-        <provided namespace='osgi.bundle' name='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0249'/>
-        <provided namespace='osgi.identity' name='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0249'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.osate.ocarina.aadlcontribution' version='0.0.1.v20201129-0249'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.osate.ocarina.aadlcontribution;singleton:=true&#xA;Bundle-Version: 0.0.1.v20201129-0249
           </instruction>
         </instructions>
       </touchpointData>
@@ -8469,41 +8458,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.osate.ocarina.feature.source.feature.jar' version='0.0.1.v20201129-0249'>
-      <properties size='7'>
-        <property name='org.eclipse.equinox.p2.name' value='OSATE2-Ocarina Developer Resources'/>
-        <property name='org.eclipse.equinox.p2.description' value='OSATE 2 plug-in that provides integration with Ocarina.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/yoogx/osate2-ocarina'/>
-        <property name='maven-groupId' value='org.osate'/>
-        <property name='maven-artifactId' value='org.osate.ocarina.feature'/>
-        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
-        <property name='maven-classifier' value='sources-feature'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.source.feature.jar' version='0.0.1.v20201129-0249'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='org.osate.ocarina.feature.source' version='0.0.1.v20201129-0249'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='org.osate.ocarina.feature.source' version='0.0.1.v20201129-0249'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.eclipse.org/legal/cpl-v10.html' url='http://www.eclipse.org/legal/cpl-v10.html'>
-          Common Public License - v 1.0&#xA;Updated 16 Apr 2009&#xA;As of 25 Feb 2009, IBM has assigned the Agreement Steward role for the CPL to the Eclipse Foundation. Eclipse has designated the Eclipse Public License (EPL) as the follow-on version of the CPL.&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (&amp;quot;AGREEMENT&amp;quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT&amp;apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&amp;quot;Contribution&amp;quot; means:&#xA; • a) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and&#xA; • b) in the case of each subsequent Contributor:&#xA; • i) changes to the Program, and&#xA; • ii) additions to the Program;&#xA; • where such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution &amp;apos;originates&amp;apos; from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor&amp;apos;s behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program.&#xA;&#xA;&amp;quot;Contributor&amp;quot; means any person or entity that distributes the Program.&#xA;&#xA;&amp;quot;Licensed Patents &amp;quot; mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.&#xA;&#xA;&amp;quot;Program&amp;quot; means the Contributions distributed in accordance with this Agreement.&#xA;&#xA;&amp;quot;Recipient&amp;quot; means anyone who receives the Program under this Agreement, including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA; • a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.&#xA; • &#xA; • b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.&#xA; • &#xA; • c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient&amp;apos;s responsibility to acquire that license before distributing the Program.&#xA; • &#xA; • d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.&#xA; • &#xA;3. REQUIREMENTS&#xA;A Contributor may choose to distribute the Program in object code form under its own license agreement, provided that:&#xA; • a) it complies with the terms and conditions of this Agreement; and&#xA; • b) its license agreement:&#xA; • i) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;&#xA; • ii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;&#xA; • iii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and&#xA; • iv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange.&#xA; • &#xA;When the Program is made available in source code form:&#xA; • a) it must be made available under this Agreement; and&#xA; • b) a copy of this Agreement must be included with each copy of the Program.&#xA;&#xA;Contributors may not remove or alter any copyright notices contained within the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (&amp;quot;Commercial Contributor&amp;quot;) hereby agrees to defend and indemnify every other Contributor (&amp;quot;Indemnified Contributor&amp;quot;) against any losses, damages and costs (collectively &amp;quot;Losses&amp;quot;) arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor&amp;apos;s responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. &#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient&amp;apos;s patent(s), then such Recipient&amp;apos;s rights granted under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&amp;apos;s rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient&amp;apos;s rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient&amp;apos;s obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. &#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version.Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
-        </license>
-      </licenses>
-    </unit>
     <unit id='org.eclipse.core.resources' version='3.13.700.v20200209-1624' generation='2'>
       <update id='org.eclipse.core.resources' range='[0.0.0,3.13.700.v20200209-1624)' severity='0'/>
       <properties size='8'>
@@ -9049,39 +9003,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.osate.ocarina.feature.source.feature.group' version='0.0.1.v20201129-0249' singleton='false'>
-      <update id='org.osate.ocarina.feature.source.feature.group' range='[0.0.0,0.0.1.v20201129-0249)' severity='0'/>
-      <properties size='8'>
-        <property name='org.eclipse.equinox.p2.name' value='OSATE2-Ocarina Developer Resources'/>
-        <property name='org.eclipse.equinox.p2.description' value='OSATE 2 plug-in that provides integration with Ocarina.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/yoogx/osate2-ocarina'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-        <property name='maven-groupId' value='org.osate'/>
-        <property name='maven-artifactId' value='org.osate.ocarina.feature'/>
-        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
-        <property name='maven-classifier' value='sources-feature'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.source.feature.group' version='0.0.1.v20201129-0249'/>
-      </provides>
-      <requires size='5'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.feature.group' range='[0.0.1.v20201129-0249,0.0.1.v20201129-0249]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.source' range='[0.0.1.v20201129-0249,0.0.1.v20201129-0249]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.aadlcontribution.source' range='[0.0.1.v20201129-0249,0.0.1.v20201129-0249]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.help.source' range='[0.1.1.v20201129-0249,0.1.1.v20201129-0249]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.source.feature.jar' range='[0.0.1.v20201129-0249,0.0.1.v20201129-0249]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='http://www.eclipse.org/legal/cpl-v10.html' url='http://www.eclipse.org/legal/cpl-v10.html'>
-          Common Public License - v 1.0&#xA;Updated 16 Apr 2009&#xA;As of 25 Feb 2009, IBM has assigned the Agreement Steward role for the CPL to the Eclipse Foundation. Eclipse has designated the Eclipse Public License (EPL) as the follow-on version of the CPL.&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (&amp;quot;AGREEMENT&amp;quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT&amp;apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&amp;quot;Contribution&amp;quot; means:&#xA; • a) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and&#xA; • b) in the case of each subsequent Contributor:&#xA; • i) changes to the Program, and&#xA; • ii) additions to the Program;&#xA; • where such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution &amp;apos;originates&amp;apos; from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor&amp;apos;s behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program.&#xA;&#xA;&amp;quot;Contributor&amp;quot; means any person or entity that distributes the Program.&#xA;&#xA;&amp;quot;Licensed Patents &amp;quot; mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.&#xA;&#xA;&amp;quot;Program&amp;quot; means the Contributions distributed in accordance with this Agreement.&#xA;&#xA;&amp;quot;Recipient&amp;quot; means anyone who receives the Program under this Agreement, including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA; • a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.&#xA; • &#xA; • b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.&#xA; • &#xA; • c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient&amp;apos;s responsibility to acquire that license before distributing the Program.&#xA; • &#xA; • d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.&#xA; • &#xA;3. REQUIREMENTS&#xA;A Contributor may choose to distribute the Program in object code form under its own license agreement, provided that:&#xA; • a) it complies with the terms and conditions of this Agreement; and&#xA; • b) its license agreement:&#xA; • i) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;&#xA; • ii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;&#xA; • iii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and&#xA; • iv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange.&#xA; • &#xA;When the Program is made available in source code form:&#xA; • a) it must be made available under this Agreement; and&#xA; • b) a copy of this Agreement must be included with each copy of the Program.&#xA;&#xA;Contributors may not remove or alter any copyright notices contained within the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (&amp;quot;Commercial Contributor&amp;quot;) hereby agrees to defend and indemnify every other Contributor (&amp;quot;Indemnified Contributor&amp;quot;) against any losses, damages and costs (collectively &amp;quot;Losses&amp;quot;) arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor&amp;apos;s responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. &#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient&amp;apos;s patent(s), then such Recipient&amp;apos;s rights granted under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&amp;apos;s rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient&amp;apos;s rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient&amp;apos;s obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. &#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version.Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
-        </license>
-      </licenses>
-    </unit>
     <unit id='org.eclipse.xtext.ui.shared' version='2.20.0.v20191202-1016' generation='2'>
       <update id='org.eclipse.xtext.ui.shared' range='[0.0.0,2.20.0.v20191202-1016)' severity='0'/>
       <properties size='6'>
@@ -9340,6 +9261,40 @@
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='org.osate.ocarina.feature.feature.jar' version='0.0.1.v20201129-0335'>
+      <properties size='6'>
+        <property name='org.eclipse.equinox.p2.name' value='OSATE2-Ocarina'/>
+        <property name='org.eclipse.equinox.p2.description' value='OSATE 2 plug-in that provides integration with Ocarina.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/yoogx/osate2-ocarina'/>
+        <property name='maven-groupId' value='org.osate'/>
+        <property name='maven-artifactId' value='org.osate.ocarina.feature'/>
+        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.feature.jar' version='0.0.1.v20201129-0335'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.osate.ocarina.feature' version='0.0.1.v20201129-0335'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.osate.ocarina.feature' version='0.0.1.v20201129-0335'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/cpl-v10.html' url='http://www.eclipse.org/legal/cpl-v10.html'>
+          Common Public License - v 1.0&#xA;Updated 16 Apr 2009&#xA;As of 25 Feb 2009, IBM has assigned the Agreement Steward role for the CPL to the Eclipse Foundation. Eclipse has designated the Eclipse Public License (EPL) as the follow-on version of the CPL.&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (&quot;AGREEMENT&quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT&apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&quot;Contribution&quot; means:&#xA; • a) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and&#xA; • b) in the case of each subsequent Contributor:&#xA; • i) changes to the Program, and&#xA; • ii) additions to the Program;&#xA; • where such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution &apos;originates&apos; from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor&apos;s behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program.&#xA;&#xA;&quot;Contributor&quot; means any person or entity that distributes the Program.&#xA;&#xA;&quot;Licensed Patents &quot; mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.&#xA;&#xA;&quot;Program&quot; means the Contributions distributed in accordance with this Agreement.&#xA;&#xA;&quot;Recipient&quot; means anyone who receives the Program under this Agreement, including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA; • a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.&#xA; • &#xA; • b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.&#xA; • &#xA; • c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient&apos;s responsibility to acquire that license before distributing the Program.&#xA; • &#xA; • d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.&#xA; • &#xA;3. REQUIREMENTS&#xA;A Contributor may choose to distribute the Program in object code form under its own license agreement, provided that:&#xA; • a) it complies with the terms and conditions of this Agreement; and&#xA; • b) its license agreement:&#xA; • i) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;&#xA; • ii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;&#xA; • iii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and&#xA; • iv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange.&#xA; • &#xA;When the Program is made available in source code form:&#xA; • a) it must be made available under this Agreement; and&#xA; • b) a copy of this Agreement must be included with each copy of the Program.&#xA;&#xA;Contributors may not remove or alter any copyright notices contained within the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (&quot;Commercial Contributor&quot;) hereby agrees to defend and indemnify every other Contributor (&quot;Indemnified Contributor&quot;) against any losses, damages and costs (collectively &quot;Losses&quot;) arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor&apos;s responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. &#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient&apos;s patent(s), then such Recipient&apos;s rights granted under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&apos;s rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient&apos;s rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient&apos;s obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. &#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version.Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
+        </license>
+      </licenses>
     </unit>
     <unit id='org.eclipse.core.runtime' version='3.18.0.v20200506-2143' generation='2'>
       <update id='org.eclipse.core.runtime' range='[0.0.0,3.18.0.v20200506-2143)' severity='0'/>
@@ -10044,6 +9999,51 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='org.osate.ocarina.feature.feature.group' version='0.0.1.v20201129-0335' singleton='false'>
+      <update id='org.osate.ocarina.feature.feature.group' range='[0.0.0,0.0.1.v20201129-0335)' severity='0'/>
+      <properties size='7'>
+        <property name='org.eclipse.equinox.p2.name' value='OSATE2-Ocarina'/>
+        <property name='org.eclipse.equinox.p2.description' value='OSATE 2 plug-in that provides integration with Ocarina.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://github.com/yoogx/osate2-ocarina'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='maven-groupId' value='org.osate'/>
+        <property name='maven-artifactId' value='org.osate.ocarina.feature'/>
+        <property name='maven-version' value='0.0.1-SNAPSHOT'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.feature.group' version='0.0.1.v20201129-0335'/>
+      </provides>
+      <requires size='18'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.edit' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.aadl2' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.aadl2.modelsupport' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.pluginsupport' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.workspace' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.xtext.aadl2.properties' range='1.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.xtext.aadl2.ui' range='1.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.console' range='3.5.100'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.lang' range='2.4.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina' range='[0.0.1.v20201129-0335,0.0.1.v20201129-0335]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.aadlcontribution' range='[0.0.1.v20201129-0335,0.0.1.v20201129-0335]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.help' range='[0.1.1.v20201129-0335,0.1.1.v20201129-0335]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.feature.feature.jar' range='[0.0.1.v20201129-0335,0.0.1.v20201129-0335]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.eclipse.org/legal/cpl-v10.html' url='http://www.eclipse.org/legal/cpl-v10.html'>
+          Common Public License - v 1.0&#xA;Updated 16 Apr 2009&#xA;As of 25 Feb 2009, IBM has assigned the Agreement Steward role for the CPL to the Eclipse Foundation. Eclipse has designated the Eclipse Public License (EPL) as the follow-on version of the CPL.&#xA;&#xA;THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (&quot;AGREEMENT&quot;). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT&apos;S ACCEPTANCE OF THIS AGREEMENT.&#xA;&#xA;1. DEFINITIONS&#xA;&quot;Contribution&quot; means:&#xA; • a) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and&#xA; • b) in the case of each subsequent Contributor:&#xA; • i) changes to the Program, and&#xA; • ii) additions to the Program;&#xA; • where such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution &apos;originates&apos; from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor&apos;s behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program.&#xA;&#xA;&quot;Contributor&quot; means any person or entity that distributes the Program.&#xA;&#xA;&quot;Licensed Patents &quot; mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.&#xA;&#xA;&quot;Program&quot; means the Contributions distributed in accordance with this Agreement.&#xA;&#xA;&quot;Recipient&quot; means anyone who receives the Program under this Agreement, including all Contributors.&#xA;&#xA;2. GRANT OF RIGHTS&#xA; • a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.&#xA; • &#xA; • b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.&#xA; • &#xA; • c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient&apos;s responsibility to acquire that license before distributing the Program.&#xA; • &#xA; • d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.&#xA; • &#xA;3. REQUIREMENTS&#xA;A Contributor may choose to distribute the Program in object code form under its own license agreement, provided that:&#xA; • a) it complies with the terms and conditions of this Agreement; and&#xA; • b) its license agreement:&#xA; • i) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;&#xA; • ii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;&#xA; • iii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and&#xA; • iv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange.&#xA; • &#xA;When the Program is made available in source code form:&#xA; • a) it must be made available under this Agreement; and&#xA; • b) a copy of this Agreement must be included with each copy of the Program.&#xA;&#xA;Contributors may not remove or alter any copyright notices contained within the Program.&#xA;&#xA;Each Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution.&#xA;&#xA;4. COMMERCIAL DISTRIBUTION&#xA;Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (&quot;Commercial Contributor&quot;) hereby agrees to defend and indemnify every other Contributor (&quot;Indemnified Contributor&quot;) against any losses, damages and costs (collectively &quot;Losses&quot;) arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.&#xA;&#xA;For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor&apos;s responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.&#xA;&#xA;5. NO WARRANTY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. &#xA;&#xA;6. DISCLAIMER OF LIABILITY&#xA;EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&#xA;&#xA;7. GENERAL&#xA;If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.&#xA;&#xA;If Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient&apos;s patent(s), then such Recipient&apos;s rights granted under Section 2(b) shall terminate as of the date such litigation is filed.&#xA;&#xA;All Recipient&apos;s rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient&apos;s rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient&apos;s obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. &#xA;&#xA;Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version.Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.&#xA;&#xA;This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
+        </license>
+      </licenses>
+    </unit>
     <unit id='org.eclipse.e4.ui.services' version='1.3.700.v20190930-1643' generation='2'>
       <update id='org.eclipse.e4.ui.services' range='[0.0.0,1.3.700.v20190930-1643)' severity='0'/>
       <properties size='8'>
@@ -10409,23 +10409,23 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.osate.ocarina.source' version='0.0.1.v20201129-0249' singleton='false'>
-      <update id='org.osate.ocarina.source' range='[0.0.0,0.0.1.v20201129-0249)' severity='0'/>
+    <unit id='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0335' singleton='false'>
+      <update id='org.osate.ocarina.aadlcontribution.source' range='[0.0.0,0.0.1.v20201129-0335)' severity='0'/>
       <properties size='9'>
-        <property name='df_LT.bundleVendor' value='ISAE'/>
-        <property name='df_LT.bundleName' value='Ocarina plug-in for OSATEv2 Source'/>
+        <property name='df_LT.bundleVendor' value='unknown'/>
+        <property name='df_LT.bundleName' value='Aadlcontribution Source'/>
         <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
         <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
         <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
         <property name='maven-groupId' value='org.osate'/>
-        <property name='maven-artifactId' value='org.osate.ocarina'/>
+        <property name='maven-artifactId' value='org.osate.ocarina.aadlcontribution'/>
         <property name='maven-version' value='0.0.1-SNAPSHOT'/>
         <property name='maven-classifier' value='sources'/>
       </properties>
       <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.source' version='0.0.1.v20201129-0249'/>
-        <provided namespace='osgi.bundle' name='org.osate.ocarina.source' version='0.0.1.v20201129-0249'/>
-        <provided namespace='osgi.identity' name='org.osate.ocarina.source' version='0.0.1.v20201129-0249'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0335'/>
+        <provided namespace='osgi.bundle' name='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0335'/>
+        <provided namespace='osgi.identity' name='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0335'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
@@ -10434,13 +10434,13 @@
         <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
       </provides>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.osate.ocarina.source' version='0.0.1.v20201129-0249'/>
+        <artifact classifier='osgi.bundle' id='org.osate.ocarina.aadlcontribution.source' version='0.0.1.v20201129-0335'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: org.osate.ocarina.source&#xA;Bundle-Version: 0.0.1.v20201129-0249
+            Bundle-SymbolicName: org.osate.ocarina.aadlcontribution.source&#xA;Bundle-Version: 0.0.1.v20201129-0335
           </instruction>
         </instructions>
       </touchpointData>
